@@ -6,11 +6,8 @@ const counter = document.getElementById("counter");
 
 let sentCount = 0;
 
-// 先使用本地 Backend 進行測試。
-// 當前端部署到 GitHub Pages 後，再視需求更新成正式伺服器 URL。
-// 例如：https://your-user.github.io/your-repo/
-// 或之後的 Render Backend URL。
-const API_URL = "http://127.0.0.1:8000";
+// Render 上已部署的 FastAPI Backend。
+const API_URL = "https://chatapp-vcss.onrender.com";
 
 function addMessage(role, text) {
     const div = document.createElement("div");
